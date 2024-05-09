@@ -10,11 +10,12 @@
   font-family: "Poppins", sans-serif;
   font-weight: 200;
 }
-body{
+
+body {
   background: rgb(251, 221, 165);
 }
 
-.enter{
+.enter {
   position: absolute;
   z-index: 999;
   min-width: 100%;
@@ -25,18 +26,25 @@ body{
   background-color: rgb(0, 0, 0);
 
 }
-#enterspoof{
+
+#enterspoof {
   width: 0;
   transform: rotateX(0deg);
   animation: bugg 1.5s ease-in-out infinite;
 
 }
+
 @keyframes bugg {
-  from{
+  from {
     width: 101vw;
     transform: rotateX(360deg);
   }
-  
+
+}
+header{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav {
@@ -77,7 +85,7 @@ nav {
 }
 
 .navList ul a {
-  color: whitesmoke;
+  color: rgb(90, 88, 88);
   text-decoration: none;
   transition: 0.4s;
   letter-spacing: 1px;
@@ -91,8 +99,10 @@ ul a li {
   background: transparent;
   border-radius: 8px;
 }
-ul a li:hover{
-  background: rgb(207, 147, 6)
+
+ul a li:hover {
+  background: #d19304;
+  color: white;
 }
 
 
@@ -145,6 +155,7 @@ ul a li:hover{
   min-height: 40vh;
   margin: 10px auto;
 }
+
 .imageContainer {
   display: flex;
   justify-content: center;
@@ -164,11 +175,13 @@ ul a li:hover{
   background-repeat: no-repeat;
   transition: all 0.5s;
 }
-.specialDishContainer{
- margin: 50px 60px;
+
+.specialDishContainer {
+  margin: 50px 60px;
 
 }
-.specialDishContainer h2{
+
+.specialDishContainer h2 {
   margin: 10px 0;
   font-family: "Kanit", sans-serif;
   font-weight: 500;
@@ -177,15 +190,14 @@ ul a li:hover{
 
 .cuisineHead {
   margin-left: 60px;
-  margin-top: 15px;
   font-family: "Kanit", sans-serif;
   font-size: 33px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 
 .Cuisines {
-  margin: 50px auto;
+  margin: 30px auto;
 }
 
 .cuisineCards {
@@ -208,7 +220,8 @@ ul a li:hover{
   box-shadow: 0 2px 12px rgb(97, 96, 96);
 
 }
-.cardBg{
+
+.cardBg {
   display: inline-flex;
   align-items: center;
   width: 88vw;
@@ -218,9 +231,10 @@ ul a li:hover{
   background-image: url("img/imag2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.4; 
+  opacity: 0.4;
   z-index: -1;
 }
+
 .textsec {
   width: 100%;
   height: 300px;
@@ -230,7 +244,8 @@ ul a li:hover{
   opacity: 1;
   transition: 0.5s;
 }
-.moreData{
+
+.moreData {
   width: 100%;
   height: 300px;
   border-radius: 200px;
@@ -240,8 +255,10 @@ ul a li:hover{
   opacity: 1;
   transition: 0.5s;
   display: none;
+  
 }
-.dataBox{
+
+.dataBox {
   opacity: 1;
   padding: 20px 100px;
   margin-top: 10px;
@@ -249,38 +266,46 @@ ul a li:hover{
   height: fit-content;
   width: fit-content;
 }
+
 .dataBox a {
   text-decoration: none;
+  color: rgb(97, 1, 192);
 }
-.dataBox a li{
+
+.dataBox a li {
   list-style: none;
   font-weight: 600;
   word-spacing: 5px;
   font-size: 35px;
 }
-.cuisineData{
+
+.cuisineData {
   opacity: 1;
   padding: 20px;
   /* padding-right: 38vw; */
 
 }
+
 .nameofCuisine {
   font-size: 33px;
   font-family: "Pacifico", cursive;
   font-weight: 500;
 }
-.cuisineInfo{
+
+.cuisineInfo {
   margin-top: 10px;
   line-height: 250%;
 }
-.cuisineInfo li{
+
+.cuisineInfo li {
   font-size: large;
   font-family: "Radio Canada Big", sans-serif;
   letter-spacing: 0.5px;
   word-spacing: 2px;
   text-shadow: 0px 2px 8px gray;
 }
-.dott{
+
+.dott {
   width: 10px;
   height: 10px;
   background-color: black;
@@ -303,17 +328,6 @@ ul a li:hover{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 #About {
   margin: 20px 60px;
 }
@@ -322,7 +336,7 @@ ul a li:hover{
   margin: 10px 0;
   font-family: "Kanit", sans-serif;
   font-size: 33px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 #About p {
@@ -399,12 +413,6 @@ ul a li:hover{
 }
 
 
-
-
-
-
-
-
 .chefContainer {
   margin: 0 auto;
   width: 90vw;
@@ -414,6 +422,7 @@ ul a li:hover{
 
 .chef {
   position: relative;
+  text-align: center;
 }
 
 .chefimgBox {
@@ -471,7 +480,7 @@ ul a li:hover{
   content: '';
   background-color: aliceblue;
   top: 1%;
-  left: 15%;
+  left: 35%;
   border: 4px solid rgb(82, 1, 125);
   border-left: 0;
   border-top: 0;
@@ -538,16 +547,235 @@ ul a li:hover{
   width: 20vw;
 }
 
-.altCard{
+.altCard {
   flex-direction: row-reverse;
 }
 
+#contactUs {
+  margin: 30px auto;
+}
 
-.divider{
+.contactHead {
+  font-weight: 600;
+  font-size: 33px;
+  margin: 15px 60px;
+}
+
+.contactWindow {
+  display: flex;
+  justify-content: center;
+}
+
+.contactBox {
+  height: 90vh;
+  width: 94vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 60px;
+  position: relative;
+   border-radius: 90px;
+  overflow: hidden;
+}
+
+.contactbgImg {
+  position: absolute;
+  height: 90vh;
+  width: 94vw;
+  left: 69%;
+  top: 5% ;
+  transform: scale(2.35,1.09);
+  z-index: -1;
+}
+.takecoffee img{
+  animation: none;
+}
+.takecoffee img:hover{
+
+animation: blinker 1s infinite ;
+}
+@keyframes blinker {
+0%{
+transform: scale(1) rotate(0deg);
+
+}
+50%{
+transform: scale(1.2) rotate(-10deg);
+opacity: 0.5;
+}
+52%{
+transform: scale(1) rotate(0deg);
+}
+100%{
+transform: scale(1.2) rotate(10deg);
+opacity:1;
+}
+  
+}
+.form-box{
+display: flex;
+flex-direction: column;
+gap: 20px;
+width: 450px;
+padding: 20px;
+border-radius: 10px;
+/* padding: 217px 550px; */
+/* backdrop-filter:blur(5px); */
+background: #ffffff94;
+
+}
+
+.inpDiv{
+display: flex;
+flex-direction: column;
+background-color:rgb(218, 217, 217);
+padding: 8px 15px;
+border:5px solid black;
+border-radius: 8px;
+gap: 4px;
+background-color: rgba(128, 128, 128, 0.141);backdrop-filter: blur(2px);
+
+}
+.inpDiv label{
+font-size: small;
+font-weight: 500;
+color: rgb(0, 0, 0);
+}
+.inpForm{
+outline: 0;
+border:0;
+background: 0;
+font-weight: 400;
+font-size: medium;
+}
+.languageSelector{
+display: inline-flex;
+justify-content: space-between;
+align-items: center;
+}
+.languageSelector .langLabel{
+font-weight: 500;
+font-size: large;
+}
+.selectLang{
+color: whitesmoke;
+outline: 0;
+border:0;
+background: 0;
+background-color: rgb(0, 0, 0);
+width: 150px;
+padding: 5px 10px;
+border-radius: 8px;
+cursor: pointer;
+font-weight: 600;
+}
+.selectLang option{
+font-size: 18px;
+letter-spacing: 2px;
+padding: 5px 10px;
+}
+.opt:hover{
+background-color: green;
+}
+
+
+.queryField{
+border:5px solid black;
+border-radius: 8px;
+background-color: rgba(128, 128, 128, 0.141);backdrop-filter: blur(2px);
+padding: 5px 10px;
+}
+
+.queryField label{
+font-weight: 500;
+font-size: large;
+}
+#textareaA{
+font-weight: 400;
+font-size: medium;
+outline: 0;
+border: 0;
+background: 0;
+
+}
+#textline{
+margin:5px 0;
+border: 1px solid rgb(63, 63, 63);
+
+}
+
+.SubmitBtn{
+border: 0;
+background: 0;
+padding: 8px 16px;
+font-size: large;
+font-weight: 500;
+background-color: black;
+color: whitesmoke;
+border-radius: 10px;
+cursor: pointer;
+}
+.SubmitBtn:hover{
+background: rgb(63, 63, 63);}
+
+
+.infoforContact{
+display: flex;
+position: absolute;
+bottom: 1px;
+color: white;
+font-size: 20px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: 550;
+text-shadow: 4px 4px 14px black;
+background-color: rgba(0, 0, 0, 0.5);
+padding: 5px;
+width: 90vw;
+text-align: center;
+word-spacing: 8px;
+}
+marquee{
+color: white;
+font-size: 20px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.divider {
   margin-top: 5px;
   height: 20px;
   width: 100vw;
   background-color: white;
   color: white;
-  /* border: 1px solid white; */;
+  /* border: 1px solid white; */
+  ;
 }
