@@ -90,3 +90,38 @@ card2.querySelector(".cardBg").style.backgroundImage = `url("img/imag4.jpg")`
 
 })
 
+//back to top btn
+window.onscroll = function(){whenscroll()}
+const BacktoTop = document.querySelector(".BacktoTop");
+function whenscroll(){
+    if(document.body.scrollTop > 300 || document.documentElement.scrollTop >300 ){
+        BacktoTop.style.display = "flex"
+    }
+    else{
+        BacktoTop.style.display = "none"
+    }
+}
+BacktoTop.addEventListener("click",()=>{
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
+
+})
+
+//contact form
+let inpDiv = document.querySelectorAll(".inpDiv")
+inpDiv.forEach((e)=>{
+    e.lastElementChild.addEventListener("focus",()=>{
+        e.style.border = "5px solid black"
+    })
+    e.lastElementChild.addEventListener("blur",()=>{
+        e.style.border = "5px solid transparent "
+    })
+    
+})
+let queryField = document.querySelector(".queryField")
+queryField.lastElementChild.addEventListener("focus",()=>{
+    queryField.style.border = "5px solid black"
+})
+queryField.lastElementChild.addEventListener("blur",()=>{
+    queryField.style.border = "5px solid transparent "
+})

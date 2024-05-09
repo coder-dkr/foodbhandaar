@@ -17,7 +17,7 @@ body {
 
 .enter {
   position: absolute;
-  z-index: 999;
+  z-index: 1999;
   min-width: 100%;
   min-height: 100%;
   display: flex;
@@ -42,8 +42,8 @@ body {
 
 }
 header{
-  position: sticky;
-  top: 0;
+  /* position: sticky;
+  top: 0; */
   z-index: 1000;
 }
 
@@ -54,7 +54,6 @@ nav {
   align-items: center;
   justify-content: space-between;
   min-width: 100vw;
-  /* background: linear-gradient(120deg, rgb(0, 0, 0), rgb(39, 33, 0)); */
   background: linear-gradient(120deg, rgb(255, 180, 40), rgb(249, 193, 26));
   height: 50px;
   color: white;
@@ -553,6 +552,7 @@ ul a li:hover {
 
 #contactUs {
   margin: 30px auto;
+  position: relative;
 }
 
 .contactHead {
@@ -587,40 +587,37 @@ ul a li:hover {
   transform: scale(2.35,1.09);
   z-index: -1;
 }
-.takecoffee img{
-  animation: none;
-}
-.takecoffee img:hover{
+.takecoffee{
+z-index: 1999;
+position: absolute;
+right: -100px;
+top: -100px;
+transform: scale(0.5);
 
-animation: blinker 1s infinite ;
+}
+.takecoffee img{
+  animation: blinker 0.5s linear infinite ;
+
 }
 @keyframes blinker {
 0%{
-transform: scale(1) rotate(0deg);
-
+  transform:rotate(16deg);
 }
 50%{
-transform: scale(1.2) rotate(-10deg);
-opacity: 0.5;
-}
-52%{
-transform: scale(1) rotate(0deg);
+  transform:rotate(8deg);
 }
 100%{
-transform: scale(1.2) rotate(10deg);
-opacity:1;
+  transform:rotate(22deg);
 }
-  
 }
+
 .form-box{
 display: flex;
 flex-direction: column;
 gap: 20px;
-width: 450px;
+width: 950px;
 padding: 20px;
 border-radius: 10px;
-/* padding: 217px 550px; */
-/* backdrop-filter:blur(5px); */
 background: #ffffff94;
 
 }
@@ -630,10 +627,10 @@ display: flex;
 flex-direction: column;
 background-color:rgb(218, 217, 217);
 padding: 8px 15px;
-border:5px solid black;
+border: 5px solid transparent;
 border-radius: 8px;
 gap: 4px;
-background-color: rgba(128, 128, 128, 0.141);backdrop-filter: blur(2px);
+background-color: rgba(128, 128, 128, 0.29);backdrop-filter: blur(2px);
 
 }
 .inpDiv label{
@@ -680,9 +677,9 @@ background-color: green;
 
 
 .queryField{
-border:5px solid black;
+border:5px solid transparent;
 border-radius: 8px;
-background-color: rgba(128, 128, 128, 0.141);backdrop-filter: blur(2px);
+background-color: rgba(128, 128, 128, 0.29);backdrop-filter: blur(2px);
 padding: 5px 10px;
 }
 
@@ -739,12 +736,31 @@ color: white;
 font-size: 20px;
 font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
+.BacktoTop{
+  position: sticky;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orangered;
+ padding: 10px 15px;
+  width: fit-content;
+  border-radius: 50%;
+  bottom: 50px;
+  float: right;
+  z-index: 2000;
+  display: none;
+  margin: 0 20px;
+  box-shadow: 4px 4px 4px black;
+}
+.BacktoTop:hover{
+  cursor: pointer;
+  background-color: rgb(239, 177, 154);
 
+}
 
-
-
-
-
+#backtoToBtn{
+  width: 30px;
+}
 
 
 
