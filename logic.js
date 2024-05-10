@@ -125,3 +125,71 @@ queryField.lastElementChild.addEventListener("focus",()=>{
 queryField.lastElementChild.addEventListener("blur",()=>{
     queryField.style.border = "5px solid transparent "
 })
+
+
+
+//star rating
+let starsCont = document.querySelectorAll(".starsCont")
+let regularStar = document.querySelectorAll(".regularStar")
+let goldStar = document.querySelectorAll(".goldStar")
+var posted = false;
+Array.from(starsCont).forEach((e,index)=>{
+
+    e.addEventListener("click",()=>{
+
+        if(posted === false){
+            if(index === 0){
+                posted = false;
+                e.classList.add("active")
+
+                e.nextElementSibling.classList.remove("active")
+                e.nextElementSibling.nextElementSibling.classList.remove("active")
+                e.nextElementSibling.nextElementSibling.nextElementSibling.classList.remove("active")
+                e.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.classList.remove("active")
+                
+            }
+            if(index === 1){
+                posted = false;
+                e.classList.add("active")
+                e.previousElementSibling.classList.add("active")
+
+                e.nextElementSibling.classList.remove("active")
+                e.nextElementSibling.nextElementSibling.classList.remove("active")
+                e.nextElementSibling.nextElementSibling.nextElementSibling.classList.remove("active")
+                
+            }
+            if(index === 2){
+                posted = false;
+                e.classList.add("active")
+                e.previousElementSibling.classList.add("active")
+                e.previousElementSibling.previousElementSibling.classList.add("active")
+
+                e.nextElementSibling.classList.remove("active")
+                e.nextElementSibling.nextElementSibling.classList.remove("active")
+            
+            }
+            if(index === 3){
+                posted = false;
+                e.classList.add("active")
+                e.previousElementSibling.classList.add("active")
+                e.previousElementSibling.previousElementSibling.classList.add("active")
+                e.previousElementSibling.previousElementSibling.previousElementSibling.classList.add("active")
+
+                e.nextElementSibling.classList.remove("active")
+                
+            }
+            if(index === 4){
+                posted = false;
+                e.classList.add("active")
+                e.previousElementSibling.classList.add("active")
+                e.previousElementSibling.previousElementSibling.classList.add("active")
+                e.previousElementSibling.previousElementSibling.previousElementSibling.classList.add("active")
+                e.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.classList.add("active")
+                
+            }
+            
+        }
+        
+    })
+        
+})
