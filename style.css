@@ -42,8 +42,6 @@ body {
 
 }
 header{
-  /* position: sticky;
-  top: 0; */
   z-index: 1000;
 }
 
@@ -281,8 +279,6 @@ ul a li:hover {
 .cuisineData {
   opacity: 1;
   padding: 20px;
-  /* padding-right: 38vw; */
-
 }
 
 .nameofCuisine {
@@ -776,7 +772,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;}
 #Review{
   margin: 30px auto;
   background: rgb(244, 242, 242);
-  padding: 10px 0;
+  padding: 0;
   padding-bottom: 30px;
   border-top: 10px solid white;
   border-bottom: 10px solid white;
@@ -799,7 +795,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;}
   gap: 40px;
   background-color: #ffffff;
   position: relative;
-  box-shadow: 0 3px 8px gray;
+  box-shadow: 0 1px 8px gray;
 }
  .writeBox{
   display: flex;
@@ -841,7 +837,6 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
 .stars{
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   gap:5px;
   width: fit-content;
@@ -888,6 +883,9 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;}
   border: 2px solid black;
   font-weight: 600;
 }
+#postBtn:active{
+  opacity: 0.2;
+}
 .starsCont.active .regularStar{
   display: none;
 }
@@ -895,3 +893,72 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;}
   display: inline;
 }
 
+.commentsBox{
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color:white;
+  height: 350px;
+  width: 96vw;
+  border-radius: 25px;
+  padding: 10px;
+  padding-inline: 20px ;
+  display: flex;
+  flex-direction: column;
+  gap: 5px; 
+
+
+}
+.commentsBox h3{
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 28px;
+}
+.commentReels{
+  height: 300px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 40px;
+  overflow-x: scroll;
+}
+
+.comment{
+  background-color: aliceblue;
+  min-width: 450px;
+  max-width: 450px;
+  min-height: 200px;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  border-radius: 7px;
+
+}
+.commentHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.user {
+  display: flex;
+  align-items: center;
+}
+.user img{
+  margin-right: 15px;
+  width: 20px;
+}
+.user .username{
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.userRating{
+  display: flex;
+  position: absolute;
+  bottom: 15px;
+  width: 25px;
+  gap: 5px;
+}
