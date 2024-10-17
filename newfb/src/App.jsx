@@ -14,6 +14,7 @@ import Footer from './components/Footer'
 const App = () => {
   return (
     <>
+      <a href="https://github.com/coder-dkr/" target='_blank' className='fixed font-semibold z-[1000] px-5 py-1 rounded-full left-1/2 -translate-x-1/2 bottom-2 cursor-pointer bg-black text-white shadow-sm shadow-white'>Crafted with 💖 by <span className='font-bold'>Dhruv Roy</span></a>
       <Navbar/>
       <HeroSlides/>
       <Featured/>
